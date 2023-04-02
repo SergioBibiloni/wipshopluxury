@@ -1,0 +1,373 @@
+/* Estilos Generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo1{
+    width: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to bottom right, #00bcd4, #4caf50);
+    color: #fff;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, #00bcd4, #4caf50);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Features Section */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+    background-color: #fff;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.feature p {
+    font-size: 18px;
+}
+
+/* Products Section */
+
+.introproducts{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding: 80px 40px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-15px);
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom right, #00bcd4, #4caf50);
+    box-shadow: 0 2px 54px rgb(255, 255, 255);
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.product p {
+    font-size: 18px;
+    text-align: center;
+    
+
+}
+
+.textoproduct{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: #000000;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px);
+}
+
+.social-media i {
+    font-size: 24px;
+}
+
+
+.newsletter{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #00bcd4, #4caf50);
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Header */
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        height: auto;
+        padding: 80px 40px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    /* Features Section */
+
+    .features {
+        padding: 80px 20px;
+    }
+
+    .feature {
+        margin-bottom: 40px;
+    }
+
+    .feature i {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+
+    /* Products Section */
+
+    .products {
+        padding: 80px 20px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 20px;
+    }
+
+    .features {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+        background-color: #fff;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    /* Hero Section */
+
+    .hero h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Features Section */
+
+    .feature {
+        padding: 10px;
+    }
+
+    .feature i {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .feature h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    /* Products Section */
+
+    .product h3 {
+        font-size: 20px;
+    }
+
+    .product p {
+        font-size: 16px;
+    }
+}
